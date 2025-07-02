@@ -42,6 +42,7 @@ nestjs-enterprise-course-projects/
 ├── first-project/ # Creating my first project
 ├── messages_App/ # Simple messages app (Create & Read)
 ├── Di_App/ # PowerSupply calls CPU & Disk, both call Power
+├── Authentication/ # Authentication (using guards and sessions)
 
 ```
 
