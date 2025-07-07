@@ -13,12 +13,13 @@ import {
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
 import { UsersService } from './users.service';
-import { Serialize} from 'src/interceptors/serialize.interseptor';
+import { Serialize} from '../interceptors/serialize.interseptor';
 import { UserDto } from './dtos/user.dto';
 import { AuthService } from './services/auth.service';
 import { User } from './users.entity';
 import { CurrentUser } from './decorators/current-user.decorator';
-import { AuthGuard } from 'src/guards/auth.gurad';
+import { AuthGuard } from '../guards/auth.gurad';
+
 
 @Controller('auth')
 @Serialize(UserDto)
@@ -33,9 +34,7 @@ export class UsersController {
         return user;
     }
     // @Get('/whoami')
-    // whoAmI(@Session() session:any){
-    //     return this.usersService.findOne(session.userId);
-    // }
+    // whoA 
 
     @Get('/whoami')
     @UseGuards(AuthGuard)
