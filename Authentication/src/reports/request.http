@@ -10,14 +10,15 @@ Content-Type: application/json
     "lng":45,
     "lat":45,
     "mileage":100000
-    
 }
 
 
+# patch function
 
-PATCH http://localhost:3000/reports/7
+PATCH http://localhost:3000/reports/8
 Content-Type: application/json
 
 {
     "approved":true
 }
+
